@@ -1,0 +1,13 @@
+<div class="user-detail-container" *ngIf="user">
+    <div>
+        <img class="user-detail-avatar-image" 
+        [src]="user.gender=='Male'?'assets/images/male-avatar.png':'assets/images/female-avatar.png'">
+    </div>
+    <div class="user-detail-info" >
+        <h2>User Detail</h2>
+        <p><b>Name:</b> {{user.name}}</p>
+        <p><b>Gender:</b> {{user.gender}}</p>
+        <p><b>Subscription Type:</b> {{user.subType}}</p>
+        <p><b>Status:</b> {{user.status}}</p>
+    </div>    
+</div>

@@ -9,8 +9,9 @@ import { SubscribeService } from '../../../Services/subscribe.service';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
+  constructor(private subService:SubscribeService){
+  }
   OnSubscribe(){
-    let subService = new SubscribeService();
-  subService.OnSubscribeClicked('quaterly');
+    this.subService.OnSubscribeClicked('quaterly');
   }
 }

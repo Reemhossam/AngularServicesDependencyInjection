@@ -1,4 +1,5 @@
 export class SubscribeService{
+  test:string ='service';
   OnSubscribeClicked(type:string){
     //add user to db
     //send subscribtion mail

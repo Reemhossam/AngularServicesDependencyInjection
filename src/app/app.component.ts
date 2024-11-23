@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, InjectionToken } from '@angular/core';
+import { provideRouter, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 
 @Component({
@@ -10,5 +10,5 @@ import { HeaderComponent } from './header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'AngularServicesDependencyInjection';
+  title = 'AngularServicesDependencyInjection'; 
 }

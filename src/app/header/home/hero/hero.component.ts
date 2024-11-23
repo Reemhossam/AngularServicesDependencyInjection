@@ -6,13 +6,17 @@ import { SubscribeService } from '../../../Services/subscribe.service';
   standalone: true,
   imports: [],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrl: './hero.component.css',
+  //providers:[SubscribeService]
 })
 export class HeroComponent {
+  constructor(private subService:SubscribeService){
+
+  }
 
   OnSubscribe(){
-    let subService = new SubscribeService();
-    subService.OnSubscribeClicked('yearly');
+    this.subService.OnSubscribeClicked('yearly');
+    console.log(this.subService.test);
   }
 
 }
